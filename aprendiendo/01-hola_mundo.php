@@ -11,7 +11,7 @@
 
     function imprimir($parametro)
     {
-        print_r('El juego 1 es: '.$parametro['juego_1'].' El juego 2 es: '.$parametro['juego_2']);
+        print_r('El juego 1 : '.$parametro['juego_1'].' El juego 2 es: '.$parametro['juego_2']);
     }
 
     //$game_1 = 'LOL';
