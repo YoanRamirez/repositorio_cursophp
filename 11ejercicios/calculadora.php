@@ -13,7 +13,7 @@
     <form method="GET" action="ejercicios.php">
       
         <p>
-            <label>Numero</label>
+            <label>Numerooosss</label>
             <input type="number" name="num_1" min="" max="10" step="1" />
         </p>
         <p>
