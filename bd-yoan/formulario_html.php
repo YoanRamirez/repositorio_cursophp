@@ -27,6 +27,9 @@ $conexion = mysqli_connect("localhost", "root", "", "bd_yoantest");
     </form>
 
 
+
+
+
     <h1 align="center">Info del form</h1>
     <table width="70%" border="1px" align="center">
         <tr align="center">
@@ -56,3 +59,11 @@ $conexion = mysqli_connect("localhost", "root", "", "bd_yoantest");
 </body>
 
 </html>
+
+
+<script>
+
+
+
+
+</script>
