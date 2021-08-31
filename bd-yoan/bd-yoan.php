@@ -49,5 +49,19 @@ $conexion = mysqli_connect("localhost", "root", "", "bd_yoantest");
 if (mysqli_connect_errno()) {
     echo "fallamos al conectarnos " . mysqli_connect_error();
 } else {
-    echo "bien conectado";
+    echo "bien conectado <br>  ";
+}
+
+//consulta para ver los caracteres mal ingresados
+
+mysqli_query($conexion, "SET NAMES 'UTF8'"); //SI TIENE EÑE O NO
+
+//CONSULTA select desde php
+
+$query = mysqli_query($conexion, "SELECT * FROM usuario");
+
+//recorrer la tabla de la bd
+while ($usuario =  mysqli_fetch_assoc($query)) {
+    echo "<br>";
+    var_dump($usuario);
 }
