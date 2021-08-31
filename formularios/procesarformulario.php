@@ -48,7 +48,7 @@ if (!$error) {
         <td>Contraseña</td>
     </tr>
         <tr>
-            <td><?php echo $nombre?></td>
+            <td><?=$nombre?></td>
             <td><?php echo $edad?></td>
             <td><?php echo $apellido?></td>
             <td><?php echo $correo?></td>
