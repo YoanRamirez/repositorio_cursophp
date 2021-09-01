@@ -27,6 +27,8 @@ $conexion = mysqli_connect("localhost", "root", "", "bd_yoantest");
     </form>
 
     <?php
+    // tarea no hacer que se inserte mil veces
+    
     if ($_POST) {
         $n = $_POST['nombre'];
         $a = $_POST['apellido'];
