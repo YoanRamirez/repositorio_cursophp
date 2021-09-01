@@ -16,20 +16,29 @@ $conexion = mysqli_connect("localhost", "root", "", "bd_yoantest");
 <body>
     <form action="formulario_html.php" method="POST">
         <p>Nombre: <input type="text" name="nombre" size="40"></p>
-        <p>Apellido: <input type="text" name="apellido" ></p>
-        <p>Edad: <input type="number" name="edad" min="40"></p>
-        <p>Rut: <input type="text" name="rut" ></p>
-        <p>Telefono: <input type="text" name="telefono" ></p>
+        <p>Apellido: <input type="text" name="apellido"></p>
+        <p>Edad: <input type="number" name="edad"></p>
+        <p>Rut: <input type="text" name="rut"></p>
+        <p>Telefono: <input type="text" name="telefono"></p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Borrar">
         </p>
     </form>
 
+    <?php
+    if ($_POST) {
+        $n = $_POST['nombre'];
+        $a = $_POST['apellido'];
+        $e = $_POST['edad'];
+        $r = $_POST['rut'];
+        $t = $_POST['telefono'];
 
+        mysqli_query($conexion, "INSERT INTO usuario(nombre,apellido,edad,rut,telefono)values('$n','$a','$e','$r','$t')");
+        echo "LOGRADO";
+    }
 
-
-
+    ?>
     <h1 align="center">Info del form</h1>
     <table width="70%" border="1px" align="center">
         <tr align="center">
@@ -40,10 +49,11 @@ $conexion = mysqli_connect("localhost", "root", "", "bd_yoantest");
             <td>Telefono</td>
         </tr>
         <?php
-
+        echo "paro ?:(";
         $query = mysqli_query($conexion, "SELECT * FROM usuario");
         while ($usuario =  mysqli_fetch_assoc($query)) {
             echo "<br>";
+            echo "paro ?:)";
         ?>
             <tr>
                 <td><?php echo  $usuario['nombre']  ?></td>
@@ -56,14 +66,7 @@ $conexion = mysqli_connect("localhost", "root", "", "bd_yoantest");
         }
         ?>
     </table>
+
 </body>
 
 </html>
-
-
-<script>
-
-
-
-
-</script>
