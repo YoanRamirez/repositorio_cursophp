@@ -21,3 +21,6 @@ INSERT INTO table_name (Column1, Column 2....)
 
   insert into usuario (nombre,apellido,edad,rut,telefono) 
 	values ('jose','ramiro','34','1234567-9','1123456');
+
+
+  DELETE FROM usuario WHERE id = 3
