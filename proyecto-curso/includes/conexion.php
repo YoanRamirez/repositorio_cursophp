@@ -6,3 +6,4 @@ $basededatos = 'cursophp';
 $bd = mysqli_connect($servidor, $usuario, $password, $basededatos);
 
 mysqli_query($bd, "SET NAMES 'UTF8'");
+ 
