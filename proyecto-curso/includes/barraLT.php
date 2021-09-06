@@ -21,7 +21,7 @@ require_once 'conexion.php';
     <div id="registro.php" class="block-aside">
         <h3>REGISTRO</h3>
         <form action="registro.php" method="$_POST">
-            <input type="text" name="nombre" size="40" placeholder="Escriba sus dos nombre">
+            <input type="text" name="nombre"  placeholder="Escriba sus dos nombre">
             <input type="text" name="apellidos" size="40" placeholder="Escriba sus dos apellidos">
             <input type="text" name="edad" size="40" placeholder="Escriba su edad">
             <p>Email: <input type="email" name="email"></p>
